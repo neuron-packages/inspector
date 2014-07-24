@@ -1,0 +1,19 @@
+{
+  "name": "inspector",
+  "version": "0.1.0",
+  "description": "element inspector",
+  "main": "index.js",
+  "repository": "git://github.com/cortex-packages/inspector.git",
+  "keywords": [
+    "inspector"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "ltebean",
+    "email": "yucong1118@gmail.com"
+  },
+  "bugs": {
+    "url": "http://github.com/cortex-packages/inspector/issues"
+  },
+  "homepage": "http://github.com/cortex-packages/inspector"
+}

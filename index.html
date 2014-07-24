@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+
+<!-- cortex build will generate the two files below. -->
+<script src="./neurons/neuron.js"></script>
+<script src="./neurons/config.js"></script>
+<script>
+  neuron.config({
+    // cortex build will generate a folder named `'neurons'` as well as the `'node_modules'` of node.js
+    path: './neurons'
+  });
+</script>
+</head>
+
+<body>
+
+<div id="a">a</div>
+<div id="b">b</div>
+<div id="c">c</div>
+<div id="d">d</div>
+
+<button onclick="inspector.toggleActive();">toggleActive</button>
+
+<script>
+    _use('inspector',function(Inspector){
+      inspector = new Inspector({
+        active:true,
+        every:true
+      });
+      inspector.on("pick", function(e, elem){
+        console.log(elem);
+      });
+    })
+    
+  </script>
+
+</body>
+
+</html>
